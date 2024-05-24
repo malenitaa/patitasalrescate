@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang = "es">
+<head>
+</head>
+
+<body>
+    <header>
+    </header>
+
+    <main>
+        <h3 class = "title">Adoptá</h3>
+        <p>LEER ANTES DE COMPLETAR EL FORMULARIO:
+            ➤ Tener en cuenta que damos en adopción en CABA, Zona Norte y algunas partes de Zona Oeste (Buenos Aires, Argentina). No damos en adopción a otras provincias ni países.
+            ➤ El formulario debe ser completado por la persona RESPONSABLE DEL HOGAR (+21), sin excepciones.
+            ➤ Si aún no están 100% decididos en adoptar, por favor NO COMPLETAR EL FORMULARIO, pueden consultarnos todas sus dudas vía mail o Instagram previamente.
+            ➤ Los datos a llenar son usados únicamente con fines de la organización, ningún dato será publicado ni compartido.➤ Les pedimos por favor que completen el formulario de la manera más honesta, responsable y detallada posible. Cuanta más información contengan las respuestas, ¡mejor!</p>
+
+        <ul class="errors alert-warning"> 
+        </ul>
+
+        <form class="form" id="form" action = "/adoptForm/create" method = "POST" class = "adopt-form" enctype="multipart/form-data">
+        
+            
+            <div class = "email">
+                <!--CAMPO NOMBRE-->
+                <label for = "email" class = "form-label-email">Correo electrónico</label>
+                    <input 
+                    type = "email" 
+                    email = "email" 
+                    id = "email" 
+                    placeholder = "Ej: mariaperez@gmail.com"
+                    >
+                    
+                 <!--CAMPO ANIMAL-->
+                <label for = "animal">¿Estás interesad@ en algún animal en particular? Si es así escribí su nombre aquí.</label>
+                    <textarea name = "animal" id = "animal" class = "form-input" placeholder = "Pelusa"></textarea>
+            </div>
+            
+            
+            <div class = "other-animals">
+                 <!--CAMPO OTROS ANIMALES-->
+                <label for = "other-animals" class = "form-label">¿Hay otros animales en la casa?</label>
+                    <input 
+                    type = "text" 
+                    name = "text-other-animals" 
+                    id = "text-other-animals" 
+                    class = "form-input"
+                    >
+            </div>
+            
+            <div class = "if-holiday">
+                <!--CAMPO HOLIDAYS-->
+                <label for = "holiday" class = "form-label">¿Pensaste quién cuidará responsablemente de tu adoptado durante tus vacaciones?</label>
+                    <input 
+                    type = "text"
+                    name = "text-if-holiday" 
+                    id = "text-if-holiday" 
+                    class = "form-input"
+                    >
+
+                <label for = "room" class = "form-label">¿Dónde vivirá el animal adoptado? (casa, depto., PH, casa quinta, etc.)</label>
+                <!--CAMPO VIVIENDA-->
+                    <input 
+                    type = "text" 
+                    name = "room" 
+                    id = "room" 
+                    class = "form-input"
+                    >
+            </div>           
+                
+            
+            <div class = "free-space">
+                <!--CAMPO AIRELIBRE-->
+                <label for = "free-space" class = "form-label">¿Posees algún espacio al aire libre? (balcón, terraza, patio, etc). En caso de tenerlo por favor indicar si tiene cercos y/o cerramientos y de qué tipo (rejas, muros, red, etc)</label>
+                    <input 
+                    type = "text" 
+                    name = "room" 
+                    id = "room" 
+                    class = "form-input"
+                    >
+            </div>
+
+            <!--BOTONES-->
+            <div class = "button-container">
+                <!--Boton submitir-->
+                <button type= "submit" id = "newAdoptionButton" class = "newAdoptionButton">Enviar</button>
+            </div>
+        </form>
+    </main>
+
+    <footer>
+    </footer>
+
+    <script src="/js/adoptFormValidation.js"></script>
+
+</body>	
+</html>
