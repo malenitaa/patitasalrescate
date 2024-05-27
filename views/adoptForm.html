@@ -4,27 +4,56 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../public/css/stylesAdoptForm.css">
+        <!--Fuente banner-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
         <title>Patitas al Rescate | Adoptá 🐾</title>
     </head>
 
     <body>
-        <header>
+        <header id="header">
+            <div>
+                <a href="/"><img src="../public/img/logo transparente.png" id="img"></a>
+
+            </div>
+            <div class="button">
+                <a href="/nosotros" class="link">NOSOTROS</a>
+            </div>
+            <div class="button">
+                <a href="/adopta" class="link">ADOPTÁ</a>
+            </div>
+            <div class="button">
+                <a href="/salva-vidas" class="link">SALVA VIDAS</a>
+            </div>
+            <div class="button">
+                <a href="/contacto" class="link">CONTACTO</a>
+            </div>
+            <div class="button">
+                <a href="/donaciones" class="link">DONACIONES</a>
+            </div>
+            <div id="buttonDona">
+                <a href="/dona-ahora" id="linkDona">DONA AHORA</a>
+            </div>
         </header>
     
         <main>
-            <h3 class="title">Adoptá</h3>
-            <p>LEER ANTES DE COMPLETAR EL FORMULARIO:
-                ➤ Tener en cuenta que damos en adopción en CABA, Zona Norte y algunas partes de Zona Oeste (Buenos Aires, Argentina). No damos en adopción a otras provincias ni países.
-                ➤ El formulario debe ser completado por la persona RESPONSABLE DEL HOGAR (+21), sin excepciones.
-                ➤ Si aún no están 100% decididos en adoptar, por favor NO COMPLETAR EL FORMULARIO, pueden consultarnos todas sus dudas vía mail o Instagram previamente.
-                ➤ Los datos a llenar son usados únicamente con fines de la organización, ningún dato será publicado ni compartido.➤ Les pedimos por favor que completen el formulario de la manera más honesta, responsable y detallada posible. Cuanta más información contengan las respuestas, ¡mejor!</p>
-    
-            <ul class="errors alert-warning"> 
-            </ul>
+            <div class="banner">
+                <img src="../public/img/adopta.png" alt="imagen-adopta" class="img-adopta">
+                <div class="text-overlay">ADOPTÁ</div>
+            </div>
+            <h4>LEER ANTES DE COMPLETAR EL FORMULARIO:</h4>
+            <p>
+                ➤ Tener en cuenta que damos en adopción en CABA, Zona Norte y algunas partes de Zona Oeste (Buenos Aires, Argentina). No damos en adopción a otras provincias ni países.<br>
+                ➤ El formulario debe ser completado por la persona RESPONSABLE DEL HOGAR (+21), sin excepciones.<br>
+                ➤ Si aún no están 100% decididos en adoptar, por favor NO COMPLETAR EL FORMULARIO, pueden consultarnos todas sus dudas vía mail o Instagram previamente.<br>
+                ➤ Los datos a llenar son usados únicamente con fines de la organización, ningún dato será publicado ni compartido.<br>
+                ➤ Les pedimos por favor que completen el formulario de la manera más honesta, responsable y detallada posible. Cuanta más información contengan las respuestas, ¡mejor!<br>
+            </p>
     
             <form class="form" id="form" action="/adoptForm/create" method="POST" class="adopt-form" enctype="multipart/form-data">
             
-                <div class="input-group email">
+                <div class="input-group">
                     <label for="email" class="form-label">Correo electrónico</label>
                     <input 
                         type="email" 
@@ -37,7 +66,12 @@
                         
                 <div class="input-group">
                     <label for="animal" class="form-label">¿Estás interesad@ en algún animal en particular? Si es así escribí su nombre aquí.</label>
-                    <textarea name="animal" id="animal" class="form-input" placeholder="Pelusa"></textarea>
+                    <input 
+                        type="text" 
+                        name="text-animals" 
+                        id="text-animals" 
+                        class="form-input"
+                    >
                 </div>
                 
                 <div class="input-group other-animals">
