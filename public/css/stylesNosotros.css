@@ -56,6 +56,7 @@
 }
 
 /*BODY*/
+
 .banner
     {position: relative;
     padding-bottom: 15px;
@@ -80,7 +81,7 @@
     font-size: 7.5rem;
     font-weight: 800;}
 
-h4
+.columnas h4
     {display: flex;
     height: 3rem;
     flex-shrink: 0;
@@ -90,7 +91,7 @@ h4
     justify-content: center;
     margin-bottom: 10px;}
 
-p
+.columnas p
     {height: 10rem;
     flex-shrink: 0;}
 
@@ -106,8 +107,7 @@ p
 
 /*FOOTER*/
 footer
-    {background-color: #F2C9DC;
-    padding: 5px 0;}
+    {background-color: #F2C9DC;}
 
 .footer-box
     {display: flex;
@@ -168,4 +168,4 @@ footer
     font-size: 12px;
     color: #F8F8F8;
     width: 85%;
-    /* margin-top: 20px; */}
+    margin-top: 20px;}
