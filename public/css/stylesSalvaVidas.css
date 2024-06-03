@@ -63,7 +63,7 @@
     height: auto;
     text-align: center;}
 
-.img-conocelos
+.img-salvavidas
     {width: 100%;
     height: auto;
     max-width: 100%;
@@ -73,71 +73,15 @@
 .text-overlay
     {position: absolute;
     top: 75%;
-    left: 74%;
+    left: 65%;
     transform: translate(-50%, -50%);
     color: #F2F2F2;
     font-family: "Barlow", sans-serif;
     font-size: 7.5rem;
-    font-weight: 800;}
+    font-weight: 800;
+    white-space: nowrap; }
 
-.container
-    {display: flex;}
 
-.row
-    {display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: stretch;}
-
-.box
-    {display: flex;
-    flex-direction: column;
-    margin: 10px;
-    margin-bottom: 25px;
-    padding: 20px;
-    background: white;
-    transition: background-color 500ms, transform 500ms;}
-
-.box:hover
-    {background-color: #7fbcb221;
-    transform: scale(1.1);}
-
-.box img
-    {width: 230px;
-    height: 280px;}
-
-.pet-box_image
-    {display: flex;}
-
-.pet-box_data
-    {display: flex;
-    flex-direction: column;
-    width: 220px;
-    margin-top: 10px;
-    border-top: solid 1px #ebebeb}
-
-/* .age-pet
-    {margin-top: 16px;
-    padding: 10px;
-    font-size: 22px;
-    text-align: right;
-    font-weight: 500;
-    color: rgba(17, 153, 158, 1);
-    text-decoration: none;} */
-
-.name-pet
-    {margin-top: 3px;
-    text-align: left;
-    color: rgba(41, 53, 51, 1);
-    padding: 10px;
-    font-weight: normal;
-    background-color: #7fbcb221;
-    font-size: 130%;
-    text-decoration: none}
-
-a
-    {text-decoration: none;}
 
 /*FOOTER*/
 footer
