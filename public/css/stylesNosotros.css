@@ -131,7 +131,8 @@ footer
 
 .sections-footer
     {flex: 1;
-    margin-right: 5px;}
+    margin-right: 5px;
+margin-top: 2em;}
 
 .title-footer
     {font-weight: bold;
@@ -162,6 +163,12 @@ footer
 .sitesLogos-footer a
     {color: #F8F8F8;}
 
+.footer-box .content-footer .sections-footer .logobox-footer  .logo-footer{
+    width: 30%;
+    align-content: center;
+    margin-left:2em;
+    margin-top: -1em;
+}
 /*copyright*/
 .reservados-footer
     {text-align: center;
@@ -169,3 +176,4 @@ footer
     color: #F8F8F8;
     width: 85%;
     margin-top: 20px;}
+
