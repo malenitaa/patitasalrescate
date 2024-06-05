@@ -56,6 +56,16 @@
 }
 
 /*BODY*/
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    background-color: #F2F2F2;
+}
+
 .banner
     {position: relative;
     padding-bottom: 15px;
@@ -80,45 +90,74 @@
     font-size: 7.5rem;
     font-weight: 800;}
 
-h4
-    {height: 2.75rem;
-    flex-shrink: 0;
-    fill: #EED4D4;}
+.aviso{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 90%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
 
-p
-    {height: 10rem;
-    flex-shrink: 0;
-    background: #E6F1D0;}
+.titulo{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    font-size: 1.5rem;
+    background-color: #F2C9DC;
+}
+
+.parrafo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    height: 22vh;
+    background-color: #E6F1D0;
+}
 
 form
-    {display: flex;
+    {
+    display: flex;
     flex-direction: column;
-    width: 50rem;
-    height: 30rem;
-    flex-shrink: 0;
-    border-radius: 0.6rem;
-    margin: 20px auto;}
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.input-group{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    justify-content: center;
+    width: 80%;
+    height: 100%;
+
+}
 
 label
     {color: #000;
     padding: 20px;
-    width: 17.25rem;
-    height: 2.875rem;
-    flex-shrink: 0;
+    width: 100%;
+    align-items: center;
+    text-align: left;
+    height: auto;
     font-size: 1.25rem;
     font-weight: 400;
-    line-height: normal;}
+    line-height: normal;
+}
 
 input
-    {width: 45rem;
-    height: 3rem;
-    /* border: none; 
-    border-bottom: 2px solid #000;  */
+    {width: 100%;
+    height: 4rem;
     margin: 1rem;
     background: none; 
     margin-left: 20px; 
     font-size: 1rem;
-    background-color: #E6F1D0}
+    background-color: #E6F1D0;
+}
 
 button 
     {width: 17rem;
@@ -133,81 +172,100 @@ button
     font-size: medium;
     margin: 0 5px;
     color: white;
-    margin: 15px;}
+    margin: 15px;
+}
 
 button:hover
     {background-color: #f497bc;
     transition: 1s;}
 
 /*FOOTER*/
-footer
-{background-color: #F2C9DC;}
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-color: #F2C9DC;
+}
 
-.footer-box
-{display: flex;
-align-items: center;}
+
+.footer-box {
+    display: flex;
+    align-items: center;
+}
 
 /*logo*/
-.logobox-footer
-{margin-right: 10px;}
+.logobox-footer {
+    margin-right: 10px;
+}
 
-.logo-footer
-{max-width: 100%;}
+.logo-footer {
+    max-width: 100%;
+}
 
 /*contenido*/
-.content-footer
-{display: flex;}
+.content-footer {
+    display: flex;
+}
 
-.categories-footer
-{display: flex;
-flex-wrap: wrap;
-gap: 10px;}
+.categories-footer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
 
-.sections-footer
-{flex: 1;
-margin-right: 5px;
-margin-top: 2em;}
+.sections-footer {
+    flex: 1;
+    margin-right: 5px;
+    margin-top: 2em;
+}
 
-.title-footer
-{font-weight: bold;
-font-size: 15px;
-margin-bottom: 5px;}
+.title-footer {
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 5px;
+}
 
 .navList-footer,
 .aboutList-footer,
-.contactList-footer
-{list-style: none;
-padding: 0;
-font-size: 14px;}
+.contactList-footer {
+    list-style: none;
+    padding: 0;
+    font-size: 14px;
+}
 
 .navList-footer li,
 .aboutList-footer li,
-.contactList-footer li
-{margin-bottom: 5px;}
+.contactList-footer li {
+    margin-bottom: 5px;
+}
 
 .navList-footer a,
 .aboutList-footer a,
-.contactList-footer a
-{color: #333}
-
-.sitesLogos-footer
-{display: flex;
-gap: 10px;}
-
-.sitesLogos-footer a
-{color: #F8F8F8;}
-
-.footer-box .content-footer .sections-footer .logobox-footer  .logo-footer{
-width: 30%;
-align-content: center;
-margin-left:2em;
-margin-top: -1em;
+.contactList-footer a {
+    color: #333
 }
-/*copyright*/
-.reservados-footer
-{text-align: center;
-font-size: 12px;
-color: #F8F8F8;
-width: 85%;
-margin-top: 20px;}
 
+.sitesLogos-footer {
+    display: flex;
+    gap: 10px;
+}
+
+.sitesLogos-footer a {
+    color: #F8F8F8;
+}
+
+.footer-box .content-footer .sections-footer .logobox-footer .logo-footer {
+    width: 30%;
+    align-content: center;
+    margin-left: 2em;
+    margin-top: -1em;
+}
+
+/*copyright*/
+.reservados-footer {
+    text-align: center;
+    font-size: 12px;
+    color: #F8F8F8;
+    width: 85%;
+    margin-top: 20px;
+}

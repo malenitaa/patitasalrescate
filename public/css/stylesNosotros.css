@@ -57,12 +57,17 @@
 
 /*BODY*/
 
+.main{
+}
+
 .banner
-    {position: relative;
+    {
+        position: relative;
     padding-bottom: 15px;
     width: 100%;
     height: auto;
-    text-align: center;}
+    text-align: center;
+}
 
 .img-nosotros
     {width: 100%;
@@ -106,8 +111,13 @@
     padding: 10px;}
 
 /*FOOTER*/
-footer
-    {background-color: #F2C9DC;}
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-color: #F2C9DC;
+}
+
 
 .footer-box
     {display: flex;
