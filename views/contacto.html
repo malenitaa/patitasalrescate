@@ -5,23 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../public/css/stylesContacto.css">
+    <script src="../public/js/contactoValidations.js"></script>
 </head>
 <body class="body">
     <header id="header">
         <div>
-            <a href="/"><img src="../public/img/logo transparente.png" id="img"></a>
+            <a href="../index.html"><img src="../public/img/logo transparente.png" id="img"></a>
         </div>
         <div class="button">
-            <a href="views/nosotros.html" class="link">NOSOTROS</a>
+            <a href="../views/nosotros.html" class="link">NOSOTROS</a>
         </div>
         <div class="button">
-            <a href="views/conocelos.html" class="link">ADOPTÁ</a>
+            <a href="../views/conocelos.html" class="link">ADOPTÁ</a>
         </div>
         <div class="button">
-            <a href="views/salvaVidas.html" class="link">SALVA VIDAS</a>
+            <a href="../views/salvaVidas.html" class="link">SALVA VIDAS</a>
         </div>
         <div class="button">
-            <a href="/contacto" class="link">CONTACTO</a>
+            <a href="../views/contacto.html" class="link">CONTACTO</a>
         </div>
         <div class="button">
             <a href="/donaciones" class="link">DONACIONES</a>
@@ -32,6 +33,52 @@
     </header>
 
     <main>
+        <div class="parrafo">
+            <p>
+                Queres ser voluntario o necesitas contactarte con nosotros por algun otro motivo?
+                Deja tu contacto y mensaje y te contestaremos a la brevedad.
+            </p>
+        </div>
+
+        <form class="form" id="form" method="POST" class="adopt-form" enctype="multipart/form-data">
+            <h2>Contactanos</h2>
+        
+            <div class="input-group">
+                <label for="email" class="form-label">Correo electrónico</label>
+                <input type="email" name="email" id="email" placeholder="Ej: mariaperez@gmail.com..." class="form-input">
+                <div class="error" id="error-email" style="color: red;"></div>
+            </div>
+        
+            <div class="input-group">
+                <label for="nombre" class="form-label">Nombre y Apellido</label>
+                <input type="text" name="text-name" id="text-animals" class="form-input"
+                    placeholder="Escriba aqui su nombre...">
+                    <div class="error" id="error-text-animals" style="color: red;"></div>
+            </div>
+        
+            <div class="input-group other-animals">
+                <label for="ciudad" class="form-label">Ciudad</label>
+                <input type="text" name="ciudad" id="text-other-animals" class="form-input"
+                    placeholder="Escriba en que ciudad vive...">
+                <div class="error" id="error-text-other-animals" style="color: red;"></div>
+            </div>
+        
+            <div class="input-group if-holiday">
+                <label for="phone" class="form-label">Telefono</label>
+                <input type="number" name="phone" id="text-if-holiday" class="form-input">
+                <div class="error" id="error-text-if-holiday" style="color: red;"></div>
+            </div>
+        
+            <div class="input-group">
+                <label for="room" class="form-label">Mensaje</label>
+                <input type="text" name="room" id="room" class="form-input">
+                <div class="error" id="error-room" style="color: red;"></div>
+            </div>
+        
+            <div class="button-container">
+                <button type="submit" id="newAdoptionButton" class="newAdoptionButton">Enviar</button>
+            </div>
+        </form>
     </main>
 
     <footer>

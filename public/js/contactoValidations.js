@@ -1,10 +1,10 @@
 document.addEventListener("DOMContentLoaded", function () {
     const form = document.getElementById("form");
     form.addEventListener("submit", function (e) {
-        e.preventDefault(); // Previene el envío del formulario inicialmente
+        e.preventDefault();
 
         // Limpia mensajes de error previos
-        document.querySelectorAll(".error-message").forEach(function (errorSpan) {
+        document.querySelectorAll(".error").forEach(function (errorSpan) {
             errorSpan.textContent = "";
         });
 
@@ -45,15 +45,10 @@ document.addEventListener("DOMContentLoaded", function () {
             hasErrors = true;
         }
 
-        const freeSpace = document.getElementById("free-space");
-        if (freeSpace.value === "") {
-            document.getElementById("error-free-space").textContent =
-                "Por favor, indica si posees algún espacio al aire libre.";
-            hasErrors = true;
-        }
+        // No hay un campo 'free-space' en el formulario proporcionado, así que esta validación se omite o se ajusta según sea necesario.
 
         if (!hasErrors) {
-            form.submit();
+            // form.submit(); Comentado para evitar envíos reales durante la prueba
             alert("Formulario enviado correctamente.");
         }
     });
