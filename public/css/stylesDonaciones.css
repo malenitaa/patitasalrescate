@@ -1,7 +1,9 @@
-/************TOTAL*************/
-* {
-    box-sizing: border-box;
+*
+{
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
 }
 
 /*HEADER*/
@@ -86,6 +88,68 @@
     display: block;
 }
 
+/*BODY*/
+
+.main{}
+
+.banner {
+    position: relative;
+    padding-bottom: 15px;
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+.imagen-donaciones {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    max-height: 70vh;
+    object-fit: cover;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 75%;
+    left: 67%;
+    transform: translate(-50%, -50%);
+    color: #F2F2F2;
+    font-family: "Barlow", sans-serif;
+    font-size: 7.5rem;
+    font-weight: 800;
+}
+
+.texto p {
+    background-color: rgba(230, 241, 208, 1);
+    text-align: center;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+}
+
+/*DONACIONES*/
+.donaciones-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+    margin: 1rem;
+}
+
+.columns {
+    flex: 1;
+    padding: 2rem;
+    margin: 0 1rem;
+    background-color: rgba(230, 241, 208, 1);
+    border: 2px solid black;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.columns h2, .columns h3 {
+    margin-bottom: 1rem;
+}
+
+/*FOOTER*/
 footer {
     position: relative;
     bottom: 0;
@@ -96,7 +160,6 @@ footer {
 .footer-box {
     display: flex;
     align-items: center;
-    margin-bottom: 0;
 }
 
 /*logo*/
@@ -148,7 +211,7 @@ footer {
 .navList-footer a,
 .aboutList-footer a,
 .contactList-footer a {
-    color: #333
+    color: #333;
 }
 
 .sitesLogos-footer {
