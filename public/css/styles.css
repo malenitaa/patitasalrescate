@@ -4,15 +4,11 @@
     margin: 0;
 }
 
-<<<<<<< HEAD
 body {
     font-family: Arial, sans-serif;
 }
 
-/* Header */
-=======
 /*HEADER*/
->>>>>>> be002d2c5bf186167bc9424a477c2cb9f90858f5
 #header {
     width: 100%;
     height: 17vh;
@@ -31,11 +27,8 @@ body {
     color: black;
 }
 
-<<<<<<< HEAD
-=======
 .linkLogo {}
 
->>>>>>> be002d2c5bf186167bc9424a477c2cb9f90858f5
 .link:hover {
     color: white;
 }
@@ -57,18 +50,15 @@ body {
     border-radius: 3rem;
 }
 
-#linkDona {
-    color: white;
+#buttonDona a {
     text-decoration: none;
+    color: #000000; 
 }
 
-#linkDona:hover {
-    color: black;
+#buttonDona a:hover {
+    color: white; 
 }
 
-<<<<<<< HEAD
-/* Footer */
-=======
 /*dropdown */
 .dropdown {
     position: relative;
@@ -99,7 +89,8 @@ body {
 .dropdown:hover .dropdown-content {
     display: block;
 }
->>>>>>> be002d2c5bf186167bc9424a477c2cb9f90858f5
+
+
 footer {
     position: relative;
     bottom: 0;
