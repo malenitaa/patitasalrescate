@@ -48,14 +48,16 @@
     border-radius: 3rem;
 }
 
-#linkDona {
-    color: white;
+#buttonDona a {
     text-decoration: none;
+    color: #000000; 
 }
 
-#linkDona:hover {
-    color: black;
+#buttonDona a:hover {
+    color: white; 
 }
+
+
 
 /*dropdown */
 .dropdown {
