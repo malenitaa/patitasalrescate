@@ -1,9 +1,14 @@
-/************TOTAL*************/
-*{
+/* Estilos generales */
+* {
     box-sizing: border-box;
     margin: 0;
 }
 
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
 #header {
     width: 100%;
     height: 17vh;
@@ -19,7 +24,6 @@
     text-decoration: none;
     color: black;
 }
-
 
 .link:hover {
     color: white;
@@ -51,6 +55,7 @@
     color: black;
 }
 
+/* Footer */
 footer {
     position: relative;
     bottom: 0;
@@ -64,7 +69,6 @@ footer {
     margin-bottom: 0;
 }
 
-/*logo*/
 .logobox-footer {
     margin-right: 10px;
 }
@@ -73,7 +77,6 @@ footer {
     max-width: 100%;
 }
 
-/*contenido*/
 .content-footer {
     display: flex;
 }
@@ -113,7 +116,7 @@ footer {
 .navList-footer a,
 .aboutList-footer a,
 .contactList-footer a {
-    color: #333
+    color: #333;
 }
 
 .sitesLogos-footer {
@@ -130,10 +133,8 @@ footer {
     align-content: center;
     margin-left: 2em;
     margin-top: -1em;
-    
 }
 
-/*copyright*/
 .reservados-footer {
     text-align: center;
     font-size: 12px;
@@ -141,19 +142,114 @@ footer {
     width: 85%;
     margin-top: 20px;
 }
+
 main {
-    
     border-radius: 10px; 
-    padding: 20px;
     margin: auto; 
     width: 100%;
-   
-  }
-  #carouselExampleIndicators {
-    width: 100% ;
+}
+
+#carouselExampleIndicators {
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     margin: auto;
-  }
-  
+}
+
+/* Carrusel */
+.carousel-item {
+    position: relative;
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.carousel-caption h3 {
+    margin-bottom: 10px;
+}
+
+.carousel-caption p {
+    margin-bottom: 20px;
+}
+
+.carousel-caption .btn {
+    background-color: #F2C9DC;
+    color: f1f1f1;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.carousel-caption .btn:hover {
+    background-color: #CBC5D9;
+    color: white;
+}
+
+.porUnaPataInfo {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    background-color: #E6F1D0;
+    margin: auto;
+    width: 100%; 
+    padding: 1em;
+    border-radius: 10px;
+    align-items: center; 
+    justify-content: center; }
+
+.porUnaPataInfo .imgBuzo {
+    width: 25%;
+    margin: 1em;
+    margin-left: 20%;
+    margin-right: -15%;
+}
+
+.porUnaPataInfo .textoAndBtn {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center; 
+    width: 75%;
+    padding: 1em;
+}
+
+.porUnaPataInfo .textoAndBtn .titulo {
+    font-family: "Barlow", sans-serif; 
+    font-size: 2.5em;
+    font-weight: 800;
+    margin-bottom: 0.5em; 
+}
+
+.porUnaPataInfo .textoAndBtn .text {
+    font-family: "Barlow", sans-serif; 
+    margin-bottom: 1.5em; 
+    font-weight: 400;
+    text-align: justify;
+    width: 45%;
+    margin-left: 0;
+}
+
+.porUnaPataInfo .textoAndBtn .btn {
+    background-color: #F2C9DC;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    width: 20%;
+}
+
+.porUnaPataInfo .textoAndBtn .btn:hover {
+    background-color: #CBC5D9;
+}

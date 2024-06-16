@@ -1,19 +1,14 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./public/css/styles.css">
-    <!--responsive-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--link al resto de fuente-->
     <title>Patitas al Rescate | 🐾🐾</title>
     <script src="https://kit.fontawesome.com/7ba5eb1822.js" crossorigin="anonymous"></script>
     <link rel="icon" href="./public/img/logo transparente.png" type="image/jpg">
-
 </head>
-
 <body class="body"> 
     <header id="header">
         <div>
@@ -38,42 +33,57 @@
             <a href="/dona-ahora" id="linkDona">DONA AHORA</a>
         </div>
     </header>
-
     <main>
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
-              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
             </ol>
             <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="./public/img/slide1.png" class="d-block w-100" alt="Imagen 1">
-              </div>
-              <div class="carousel-item">
-                <img src="./public/img/slide2.png" class="d-block w-100" alt="Imagen 2">
-              </div>
-              <div class="carousel-item">
-                <img src="./public/img/slide3.png" class="d-block w-100" alt="Imagen 3">
-              </div>
+                <div class="carousel-item active">
+                    <img src="./public/img/slide1.png" class="d-block w-100" alt="Imagen 1">
+                    <div class="carousel-caption">
+                        <h3>Adopta</h3>
+                        <p>Dale una segunda oportunidad a un animal rescatado.</p>
+                        <a href="./views/conocelos.html" class="btn btn-primary">Adoptar Ahora</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./public/img/slide2.png" class="d-block w-100" alt="Imagen 2">
+                    <div class="carousel-caption">
+                        <h3>Salva vidas</h3>
+                        <p>Tu donación ayuda a salvar más vidas.</p>
+                        <a href="./views/donaciones.html" class="btn btn-primary">Donar Ahora</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./public/img/slide3.png" class="d-block w-100" alt="Imagen 3">
+                    <div class="carousel-caption">
+                        <h3>Voluntariado</h3>
+                        <p>Conoce más sobre como podes ayudar.</p>
+                        <a href="./views/contacto.html" class="btn btn-primary">Contacto</a>
+                    </div>
+                </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="sr-only">Anterior</span>
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
             </a>
             <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="sr-only">Siguiente</span>
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Siguiente</span>
             </a>
-          </div>
-        
-          <!-- jQuery, Popper.js, y Bootstrap JS -->
-          <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-          <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
-          <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
+        </div>
+        <div class="porUnaPataInfo"> 
+            <img class="imgBuzo" src="./public/img/buzo.png" alt="imagen de buzo por una pata">
+            <div class="textoAndBtn">
+                <h2 class="titulo">Buzo por una pata</h2>
+                <p class="text">Con este cómodo buzo, no solo te abrigas, sino que también ayudas a salvar vidas.<br> Cada compra apoya nuestra misión de rescatar y cuidar animales en necesidad.</p>
+                <a href="https://www.instagram.com/porunapata/" target="_blank" class="btn btn-primary">Compra Ahora</a>
+            </div>
+        </div>
     </main>
-
     <footer>
         <div class="footer-box">
             <div class="content-footer">
@@ -110,12 +120,10 @@
                         <p class="title-footer">Sigamos conectados</p>
                         <div class="sitesLogos-footer">
                             <div class="facebook">
-                                <a href="https://web.facebook.com/?locale=es_LA&_rdc=1&_rdr" target="_blank"><i
-                                        class="fa-brands fa-facebook"></i></a>
+                                <a href="https://web.facebook.com/?locale=es_LA&_rdc=1&_rdr" target="_blank"><i class="fa-brands fa-facebook"></i></a>
                             </div>
                             <div class="instagram">
-                                <a href="https://www.instagram.com/" target="_blank"><i
-                                        class="fa-brands fa-instagram"></i></a>
+                                <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
                             </div>
                             <div class="patitapp">
                                 <a href="app/patitapp" target="_blank"><i class="fa fa-solid fa-paw"></i></a>
@@ -129,6 +137,9 @@
             </div>
         </div>
     </footer>
+    <!-- jQuery, Popper.js, y Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
-
 </html>
