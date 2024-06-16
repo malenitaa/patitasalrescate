@@ -57,95 +57,6 @@
 }
 
 /*MAIN*/
-.text-overlay
-    {position: absolute;
-    top: 75%;
-    left: 67%;
-    transform: translate(-50%, -50%);
-    color: #F2F2F2;
-    font-family: "Barlow", sans-serif;
-    font-size: 7.5rem;
-    font-weight: 800;}
-
-
- /*FOOTER*/
-footer {
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    background-color: #F2C9DC;
-}
-
-
-.footer-box
-    {display: flex;
-    align-items: center;}
-
-/*logo*/
-.logobox-footer
-    {margin-right: 10px;}
-
-.logo-footer
-    {max-width: 100%;}
-
-/*contenido*/
-.content-footer
-    {display: flex;}
-
-.categories-footer
-    {display: flex;
-    flex-wrap: wrap;
-    gap: 10px;}
-
-.sections-footer
-    {flex: 1;
-    margin-right: 5px;
-margin-top: 2em;}
-
-.title-footer
-    {font-weight: bold;
-    font-size: 15px;
-    margin-bottom: 5px;}
-
-.navList-footer,
-.aboutList-footer,
-.contactList-footer
-    {list-style: none;
-    padding: 0;
-    font-size: 14px;}
-
-.navList-footer li,
-.aboutList-footer li,
-.contactList-footer li
-    {margin-bottom: 5px;}
-
-.navList-footer a,
-.aboutList-footer a,
-.contactList-footer a
-    {color: #333}
-    
-.sitesLogos-footer
-    {display: flex;
-    gap: 10px;}
-
-.sitesLogos-footer a
-    {color: #F8F8F8;}
-
-.footer-box .content-footer .sections-footer .logobox-footer  .logo-footer{
-    width: 30%;
-    align-content: center;
-    margin-left:2em;
-    margin-top: -1em;
-}
-/*copyright*/
-.reservados-footer
-    {text-align: center;
-    font-size: 12px;
-    color: #F8F8F8;
-    width: 85%;
-    margin-top: 20px;}
-
-
 /* Banner */
 .banner {
     position: relative;
@@ -161,14 +72,14 @@ max-height: 70vh;
 object-fit: cover;}
 
 .text-overlay
-{position: absolute;
-top: 75%;
-left: 74%;
-transform: translate(-50%, -50%);
-color: #F2F2F2;
-font-family: "Barlow", sans-serif;
-font-size: 7.5rem;
-font-weight: 800;}
+    {position: absolute;
+    top: 75%;
+    left: 67%;
+    transform: translate(-50%, -50%);
+    color: #F2F2F2;
+    font-family: "Barlow", sans-serif;
+    font-size: 7.5rem;
+    font-weight: 800;}
 
 /* Tarjetas Giratorias */
 .container {
@@ -253,3 +164,84 @@ a {
     text-decoration: none;
     color: inherit;
 }
+
+
+
+ /*FOOTER*/
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-color: #F2C9DC;
+}
+
+
+.footer-box
+    {display: flex;
+    align-items: center;}
+
+/*logo*/
+.logobox-footer
+    {margin-right: 10px;}
+
+.logo-footer
+    {max-width: 100%;}
+
+/*contenido*/
+.content-footer
+    {display: flex;}
+
+.categories-footer
+    {display: flex;
+    flex-wrap: wrap;
+    gap: 10px;}
+
+.sections-footer
+    {flex: 1;
+    margin-right: 5px;
+margin-top: 2em;}
+
+.title-footer
+    {font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 5px;}
+
+.navList-footer,
+.aboutList-footer,
+.contactList-footer
+    {list-style: none;
+    padding: 0;
+    font-size: 14px;}
+
+.navList-footer li,
+.aboutList-footer li,
+.contactList-footer li
+    {margin-bottom: 5px;}
+
+.navList-footer a,
+.aboutList-footer a,
+.contactList-footer a
+    {color: #333}
+    
+.sitesLogos-footer
+    {display: flex;
+    gap: 10px;}
+
+.sitesLogos-footer a
+    {color: #F8F8F8;}
+
+.footer-box .content-footer .sections-footer .logobox-footer  .logo-footer{
+    width: 30%;
+    align-content: center;
+    margin-left:2em;
+    margin-top: -1em;
+}
+/*copyright*/
+.reservados-footer
+    {text-align: center;
+    font-size: 12px;
+    color: #F8F8F8;
+    width: 85%;
+    margin-top: 20px;}
+
+
