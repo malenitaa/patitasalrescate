@@ -214,3 +214,57 @@ margin-top: 2em;}
     width: 85%;
     margin-top: 20px;}
 
+
+    @media only screen and (max-width:768px){  
+        .banner{
+            height: 10vh;
+        }
+        .text-overlay{
+            font-size: 2.4em;
+        }
+        .salvaVidasInfo{
+            width: 100%;
+            flex-direction: column;
+        }
+        .salvaVidasInfo .textoSalvaVidas{
+            font-size: 0.8em;
+        }
+        .salvaVidasInfo .imgMaltrato{
+            width: 80%;
+            margin-top: 1.5em;
+            margin-right: 1.5em;
+            margin-bottom: 2em;
+        }
+        .content-footer {
+            display: flex;
+            flex-direction: column;
+            align-items: center; 
+            gap: 1rem; 
+            padding-bottom: 6em; 
+        }
+    
+        .footer-box {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center; 
+            gap: 1rem; 
+        }
+    
+        .sections-footer {
+            flex: 1; /* Distribuir el espacio disponible */
+            margin: 0.5rem; /* Margen entre secciones */
+        }
+    
+        .logo-footer {
+            max-width: 100%; /* Ajustar tamaño máximo del logo */
+            height: auto; /* Mantener proporción */
+        }
+    
+        .reservados-footer {
+            width: 100%;
+            margin-top: 1rem; /* Espacio superior */
+        }
+    
+    
+    }
+
