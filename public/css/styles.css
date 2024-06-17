@@ -297,3 +297,57 @@ main {
 .porUnaPataInfo .textoAndBtn .btn:hover {
     background-color: #CBC5D9;
 }
+
+/*RESPONSIVE*/
+@media only screen and (max-width:768px){
+    .porUnaPataInfo{
+        flex-direction: column;
+    }
+.porUnaPataInfo .textoAndBtn{
+    flex-direction: column;
+    width: 100%;
+    font-size: 0.8em;
+}
+.porUnaPataInfo .imgBuzo {
+    width: 50%;
+    align-content:center ;
+    margin-right: 3em;
+}
+.porUnaPataInfo .textoAndBtn .titulo {
+font-size: 1.5em ;
+
+}
+.porUnaPataInfo .textoAndBtn .btn {
+    width: 50%;
+}
+#carouselExampleIndicators {
+    width: 100%;
+    
+}
+carousel-caption {
+    text-align: center;
+    max-width: 80vh; 
+    margin: 0;
+}
+
+.carousel-caption h3 {
+    font-size: 0.2em;
+    margin: 0;
+    margin-top: 0;
+}
+
+.carousel-caption p {
+    font-size: 0.2em;
+    margin: 0;
+}
+
+.carousel-caption .btn {
+    background-color: #F2C9DC;
+    color: white;
+    padding: 2px 4px;
+    font-size: 0.1em;
+    margin: 0;
+}
+
+
+}
