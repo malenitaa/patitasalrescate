@@ -92,7 +92,7 @@
 }
 
 /*BODY*/
-main {
+.main {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -101,8 +101,37 @@ main {
     height: auto;
     gap: 2rem;
     background-color: #F2F2F2;
+    margin-top: 0;
 }
 
+.banner {
+    position: relative;
+    padding-bottom: 15px;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin: 0;
+    margin-bottom: -2rem; /* Ajustar este valor según sea necesario */
+}
+
+.img-conocelos {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    max-height: 70vh;
+    object-fit: cover;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 75%;
+    left: 74%;
+    transform: translate(-50%, -50%);
+    color: #F2F2F2;
+    font-family: "Barlow", sans-serif;
+    font-size: 7.5rem;
+    font-weight: 800;
+}
 
 .titulo {
     display: flex;
@@ -110,6 +139,8 @@ main {
     width: 50%;
     font-size: 1.5rem;
     background-color: #F2C9DC;
+    margin-top: 0; /* Eliminar margen superior */
+    padding: 1rem;
 }
 
 .parrafo {
@@ -119,10 +150,10 @@ main {
     text-align: center;
     gap: 1rem;
     height: 22vh;
-    margin-top: 17vh;
     font-size: 1.25rem;
     background-color: #E6F1D0;
     width: 100%;
+    margin-bottom: 3em;
 }
 
 form {
@@ -139,6 +170,7 @@ form {
     gap: 1rem;
     font-family: "Barlow", sans-serif;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-left: 30em;
 }
 
 form h2 {
@@ -301,3 +333,63 @@ footer {
     width: 85%;
     margin-top: 20px;
 }
+@media only screen and (max-width:768px){
+    #header {
+        position: relative;
+        gap: 1rem;
+        height: auto;
+        padding: 1rem;
+    }
+
+    .link {
+        margin-bottom: 0.5rem;
+    }
+
+    .dropdown-content {
+        min-width: 100%;
+    }
+    
+    .banner{
+        height: 10vh;
+        margin-bottom: 0.1em;
+    }
+    .text-overlay{
+        font-size: 2.4em;
+    }
+
+    .titulo {
+        width: 90%;
+        font-size: 1.2rem;
+    }
+
+    .parrafo {
+        padding: 1rem;
+        margin-bottom: 2rem;
+    }
+    form {
+        width: 90%;
+        max-width: 100%;
+        margin-left: 1em;
+
+    }
+
+    form h2 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .input-group {
+        width: 100%;
+    }
+
+    input {
+        height: 3rem;
+    }
+
+    button {
+        width: 100%;
+        margin-top: 10%;
+    }
+    
+}
+

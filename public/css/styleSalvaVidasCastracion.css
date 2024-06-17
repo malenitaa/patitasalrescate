@@ -221,3 +221,28 @@ margin-top: 2em;}
     width: 85%;
     margin-top: 20px;}
 
+    @media only screen and (max-width:768px){
+        .banner{
+            height: 10vh;
+        }
+        .text-overlay{
+            font-size: 2.4em;
+        }
+        .castracionInfo{
+            flex-direction: column;
+        }
+        .castracionInfo .texto .textoCastracion{
+            font-size: 1em;
+        }
+        .castracionInfo .texto .subtitulo{
+            font-size: 1.2em;
+        }
+        .castracionInfo .imgCastracion{
+            margin-top: 1em;
+            margin-right: 1em;
+            width: 80%;
+        }
+
+    }
+
+

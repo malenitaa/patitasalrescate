@@ -212,7 +212,7 @@ a {
 
 
 
- /*FOOTER*/
+/*FOOTER*/
 footer {
     position: relative;
     bottom: 0;
@@ -288,3 +288,13 @@ margin-top: 2em;}
     color: #F8F8F8;
     width: 85%;
     margin-top: 20px;}
+
+    @media only screen and (max-width:768px){  
+        .banner{
+            height: 10vh;
+        }
+        .text-overlay{
+            font-size: 2.4em;
+        }
+    
+    }
