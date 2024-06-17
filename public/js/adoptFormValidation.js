@@ -1,9 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
     const form = document.getElementById("form");
     form.addEventListener("submit", function (e) {
-        e.preventDefault(); // Previene el envío del formulario inicialmente
+        e.preventDefault();
 
-        // Limpia mensajes de error previos
         document.querySelectorAll(".error-message").forEach(function (errorSpan) {
             errorSpan.textContent = "";
         });
@@ -53,8 +52,26 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         if (!hasErrors) {
-            form.submit();
-            alert("Formulario enviado correctamente.");
+            var myModal = new bootstrap.Modal(
+                document.getElementById("successModal"),
+                {
+                    keyboard: false,
+                }
+            );
+            myModal.show();
+            form.reset();
+
+            document.querySelectorAll(".error").forEach(function (errorSpan) {
+                errorSpan.textContent = "";
+            });
+        } else {
+            var myModal = new bootstrap.Modal(
+                document.getElementById("failModal"),
+                {
+                    keyboard: false,
+                }
+            );
+            myModal.show();
         }
     });
 });

@@ -9,8 +9,11 @@
     width: 100%;
     height: 17vh;
     display: flex;
+    position: fixed;
     flex-direction: row;
     gap: 5rem;
+    z-index: 10;
+    top: 0;
     align-items: center;
     justify-content: center;
     background-color: #F2C9DC;
@@ -21,6 +24,7 @@
 .link {
     text-decoration: none;
     color: black;
+    z-index: 10;
 }
 
 .linkLogo {}
@@ -86,12 +90,18 @@
     display: block;
 }
 /*BODY*/
+main {
+    margin-top: 17vh;
+}
+
 .banner
     {position: relative;
     padding-bottom: 15px;
+    margin-top: 9rem;
     width: 100%;
     height: auto;
-    text-align: center;}
+    text-align: center;
+}
 
 .img-salvavidas
     {width: 100%;
