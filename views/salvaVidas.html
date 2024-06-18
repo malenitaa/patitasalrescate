@@ -23,29 +23,34 @@
             <div>
                 <a href="../index.html"><img src="../public/img/logo transparente.png" id="img"></a>
             </div>
-            <div class="button">
-                <a href="../views/nosotros.html" class="link">NOSOTROS</a>
+            <!-- Botón de hamburguesa -->
+            <div class="hamburger-menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
             </div>
-            <div class="button dropdown">
-                <a href="../views/conocelos.html" class="link">CONÓCELOS</a>
-                <div class="dropdown-content">
-                    <a href="../views/conocelos.html">Conócelos</a>
-                    <a href="../views/adoptForm.html">Adopta</a>
-                </div>
-            </div>
-            <div class="button dropdown">
-                <a href="../views/salvaVidas.html" class="link">SALVA VIDAS</a>
-                <div class="dropdown-content">
-                    <a href="../views/salvaVidas.html">Denunciá Maltrato</a>
-                    <a href="../views/salvaVidas_jornadaCastracion.html">Campaña de Castración</a>
-                </div>
-            </div>
-            <div class="button">
-                <a href="../views/contacto.html" class="link">CONTACTO</a>
-            </div>
-            <div class="button">
-                <a href="../views/donaciones.html" class="link">DONACIONES</a>
-            </div>
+            <!-- Menú de navegación -->
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="../views/nosotros.html" class="link">NOSOTROS</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="link">CONÓCELOS <i class="fas fa-caret-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="../views/conocelos.html">Conócelos</a>
+                            <a href="../views/adoptForm.html">Adopta</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="link">SALVA VIDAS <i class="fas fa-caret-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="../views/salvaVidas.html">Denunciá Maltrato</a>
+                            <a href="../views/salvaVidas_jornadaCastracion.html">Campaña de Castración</a>
+                        </div>
+                    </li>
+                    <li><a href="../views/contacto.html" class="link">CONTACTO</a></li>
+                    <li><a href="../views/donaciones.html" class="link">DONACIONES</a></li>
+                </ul>
+            </nav>
             <div id="buttonDona">
                 <a href="https://link.mercadopago.com.ar/acpatitasalrescate" target="_blank">DONÁ AHORA</a>
             </div>
@@ -134,5 +139,16 @@
                 </div>
             </div>
         </footer>
+        <!-- JavaScript necesario (jQuery y Bootstrap) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+        <script>
+            // JavaScript para activar el menú hamburguesa
+            $(document).ready(function () {
+                $('.hamburger-menu').click(function () {
+                    $('.nav-menu').toggleClass('active');
+                });
+            });
+        </script>  
     </body>	
 </html>
